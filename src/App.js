@@ -5,6 +5,7 @@ import Home from "./components/home";
 import Publications from "./components/publications"
 import Services from "./components/services"
 import Support from "./components/support"
+import Check from "./components/check"
 
 import { AuthProvider } from "./contexts/authContext";
 import { useRoutes } from "react-router-dom";
@@ -38,6 +39,10 @@ function App() {
     {
       path: "/support",
       element: <Support />
+    },
+    {
+      path: "/check",
+      element: <Check />
     },
   ];
   let routesElement = useRoutes(routesArray);

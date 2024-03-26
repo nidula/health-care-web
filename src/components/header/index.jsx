@@ -35,7 +35,7 @@ const Header = () => {
                 <ListItem component={RouterLink} to="/services">
                     <ListItemText primary="Our Services" />
                 </ListItem>
-                <ListItem component={RouterLink} to="/mental-status">
+                <ListItem component={RouterLink} to="/check">
                     <ListItemText primary="Check your Mental Status" />
                 </ListItem>
                 <ListItem component={RouterLink} to="/publications">
@@ -85,9 +85,7 @@ const Header = () => {
                                 Our Services
                             </Button>
                             <Button
-                                component={RouterLink}
-                                to="/mental-status"
-                                color="inherit"
+                                component={RouterLink} to="/check" color="inherit"
                                 sx={{
                                     '&:hover': {
                                         backgroundColor: '#161f36', // Change background color on hover
