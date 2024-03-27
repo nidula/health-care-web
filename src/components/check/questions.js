@@ -2,7 +2,7 @@ export const jsQuizz = {
     questions: [
         {
             question:
-            "Question 1",
+            "What is Question 1",
             choices: [
                 "Answer A",
                 "Answer B",
@@ -14,7 +14,7 @@ export const jsQuizz = {
         },
         {
             question:
-            "Question 2",
+            "What is Question 2",
             choices: [
                 "Answer A",
                 "Answer B",
@@ -26,7 +26,7 @@ export const jsQuizz = {
         },
         {
             question:
-            "Question 3",
+            "What is Question 3",
             choices: [
                 "Answer A",
                 "Answer B",
