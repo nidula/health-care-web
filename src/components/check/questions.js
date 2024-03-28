@@ -10,7 +10,6 @@ export const jsQuizz = {
                 "Answer D",
             ],
             type: "MCQs",
-            correctAnswer: "Answer C",
         },
         {
             question:
@@ -22,7 +21,6 @@ export const jsQuizz = {
                 "Answer D",
             ],
             type: "MCQs",
-            correctAnswer: "Answer C",
         },
         {
             question:
@@ -34,7 +32,6 @@ export const jsQuizz = {
                 "Answer D",
             ],
             type: "MCQs",
-            correctAnswer: "Answer C",
         },
     ],
 };

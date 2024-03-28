@@ -50,13 +50,21 @@ const Check = () => {
     
 
     const getScoreCategory = (score) => {
+        let category = "";
+        let image = "";
+    
         if (score < 3) {
-            return "Bad";
+            category = "Bad";
+            image = "/Images/Check/image1.png"; // Image for score < 3
         } else if (score <= 8) {
-            return "Middle";
+            category = "Middle";
+            image = "/Images/Check/image2.png"; // Image for score <= 8
         } else {
-            return "Good";
+            category = "Good";
+            image = "/Images/Check/image3.png"; // Image for score > 8
         }
+    
+        return { category, image };
     };
 
     const handleSubmit = () => {
@@ -130,9 +138,14 @@ const Check = () => {
                                     Submit
                                 </Button>
                                 {submitClicked && (
-                                    <Typography variant="h6" align="center" gutterBottom>
-                                        Your Mental Health Condition is {getScoreCategory(calculateScore())}
-                                    </Typography>
+                                    <>
+                                        <Typography variant="h6" align="center" gutterBottom>
+                                            Your Mental Health Condition is {getScoreCategory(calculateScore()).category}
+                                        </Typography>
+                                        <div>
+                                            <img src={getScoreCategory(calculateScore()).image} alt="Mental Health Condition Image" />
+                                        </div>
+                                    </>
                                 )}
                             </>
                         )}
